@@ -1,0 +1,23 @@
+CREATE TABLE book (
+    id INT NOT NULL AUTO_INCREMENT,
+    isbn VARCHAR(50),
+    title VARCHAR(255),
+    author VARCHAR(255),
+    publish_year INT,
+    create_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (id)
+);
+
+INSERT INTO book (isbn, title, author, publish_year)
+VALUES
+('978-0201485677', 'Refactoring: Improving the Design of Existing Code', 'Martin Fowler', 1999),
+('978-0596003302', 'Head First Design Patterns', 'Eric Freeman, Elisabeth Freeman, Kathy Sierra, Bert Bates', 2004),
+('978-0596529321', 'JavaScript: The Good Parts', 'Douglas Crockford', 2008),
+('978-0321356680', 'Effective Java', 'Joshua Bloch', 2008),
+('978-0321573519', 'Programming Pearls', 'Jon Bentley', 1999),
+('978-0596805524', 'Python Cookbook', 'Brian K. Jones, David Beazley', 2013),
+('978-0201835953', 'The Pragmatic Programmer', 'Andrew Hunt, David Thomas', 1999),
+('978-0132350884', 'Clean Code', 'Robert C. Martin', 2008),
+('978-0321125217', 'Artificial Intelligence: A Modern Approach', 'Stuart Russell, Peter Norvig', 2002),
+('978-0133591620', 'Database Systems: The Complete Book', 'Hector Garcia-Molina, Jeffrey D. Ullman, Jennifer Widom', 2008);
+
